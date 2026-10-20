@@ -15,16 +15,13 @@
     };
 };
 
+&lt {
+    quick-tap-ms = <200>;
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
+};
+
 / {
-    behaviors {
-        // Adjust layer-tap behaviour globally
-        &lt {
-            quick-tap-ms = <200>; // Tap then hold within 200ms outputs and holds the TAP key
-            tapping-term-ms = <200>; // Time required to register a hold vs tap
-            flavor = "tap-preferred";
-        };
-    };
-    
     keymap {
         compatible = "zmk,keymap";
 
